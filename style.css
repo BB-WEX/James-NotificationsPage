@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Figtree", sans-serif;
 }
 
 body {
     background-color: aliceblue;
+    box-sizing: border-box;
+    margin: 0px;
 }
 
 .page-container {
@@ -16,9 +20,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 700px;
-    height: 720px;
+    height: 775px;
     background-color: white;
     border-radius: 25px;
 }
@@ -62,20 +66,31 @@ button {
     border: none;
     color: rgb(96, 96, 96);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 0px;
+}
+
+.top-right-content button:hover {
+    color: rgb(6, 6, 81);
 }
 
 .message {
     width: 600px;
-    margin: 5px 0px 5px 0px;
+    margin: 2px 0px 3px 0px;
     padding: 0px 0px 0px 10px;
     border-radius: 5px;
+}
+
+.remove-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .message-content {
     display: flex;
     flex-direction: row;
-    height: 70px;
+    height: 80px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -87,22 +102,40 @@ img {
 
 .main-msg-txt {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+    flex-wrap: wrap;
+    max-width: 600px;
 }
 
 .main-msg-txt h1{
-    font-size: 15px;
+    font-size: 13px;
     width: fit-content;
     margin: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+span {
+    padding: 0px 3px 0px 3px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.message-txt {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: flex-start;
+}
 
 .message-txt p{
     margin: 0px;
     padding-left: 4px;
     color: rgba(96, 96, 96, 0.742);
     font-size: 14px;
+    width: fit-content;
 }
 
 
@@ -112,11 +145,31 @@ h2 {
     padding: 10px;
     color: rgb(96, 96, 96);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
+    transition: ease .5s;
+    border-radius: 5px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(215, 87, 28);
+    border-radius: 50px;
+    margin: 6px 0px 0px 5px;
+}
+
+h2:hover {
+    background-color:  rgba(141, 141, 193, 0.18);
+    border: 1px solid rgba(141, 141, 193, 0.18);
 }
 
 .name {
-    color: rgb(6, 6, 81);
+    color: rgb(6, 6, 18);
+    transition: ease .2s;
+}
+
+.name:hover {
+    color: rgb(7, 7, 130);
 }
 
 .light-txt {
@@ -124,15 +177,117 @@ h2 {
 }
 
 .end-txt {
-    color: rgba(15, 15, 77, 0.708);
+    color: rgba(24, 24, 31, 0.708);
+    transition: ease .2s;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.end-txt:hover {
+    color: rgb(15, 15, 99);
 }
 
 .side-img {
     display: flex;
     justify-content: flex-end;
-    width: 190px;
+    align-items: flex-end;
+    width: 200px;
+}
+
+.side-img img {
+    transition: ease .5s;
+}
+
+.side-img img:hover {
+    scale: 1.1;
 }
 
 .blue {
-    background-color: rgba(133, 133, 199, 0.348);
+    background-color: rgba(141, 141, 193, 0.18);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media(max-width:700px){
+    .page-content {
+        width: 100%;
+        height: 930px;
+        padding: 0px 20px 0px 20px;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .top-content {
+        width: 100%;
+    }
+    .message {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 5px;
+    }
+
+    .message-content {
+        height: 85px;
+    }
+
+    #msg-1, #msg-2, #msg-3 {
+        width: 100%;
+    }
+
+
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .remove-blue {
+        width: 96%;
+        padding: 0px;
+    }
+
+    .message-txt {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    h1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 20px;
+    }
+    span {
+        padding: 0px 2px 0px 2px;
+    }
+
+    #msg-6 {
+        margin: 15px 0px 15px 0px;
+    }
+    .side-img {
+        width: 190px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 0px 30px 0px 0px;
+    }
+    h2 {
+        font-size: 18px;
+        margin-left: 60px;
+    }
+}
+
+@media(max-width:500px) {
+    .side-img {
+        width: 150px;
+    }
 }

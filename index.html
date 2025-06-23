@@ -7,63 +7,72 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body onload="counter()">
     <div class="page-container">
         <div class="page-content">
             <div class="top-content">
                 <div class="top-left-content">
                     <h1>Notifications</h1>
-                    <div class="counter">3</div>
+                    <div class="counter"></div>
                 </div>
                 <div class="top-right-content">
                     <button>Mark all as read</button>
                 </div>
             </div>
-            <div class="main-content">
-                <div class="message blue" id="msg-1">
-                    <div class="message-content">
-                        <img src="avatar-placeholder.png" alt="">
-                        <div class="message-txt">
-                            <div class="main-msg-txt">
-                                <h1>
-                                    <span class="name">Mark Webber</span>
-                                    <span class="light-txt">reacted to your recent post</span>
-                                    <span class="end-txt">My first tournament today!</span>
-                                </h1>
+            <div class="main-content" id="main-cont">
+                <button class="remove-blue" onclick="removeBlueFunction1(), counter()" onclick>
+                    <div class="message blue" id="msg-1">
+                        <div class="message-content">
+                            <img src="avatar-placeholder.png" alt="">
+                            <div class="message-txt">
+                                <div class="main-msg-txt">
+                                    <h1>
+                                        <span class="name">Mark Webber</span>
+                                        <span class="light-txt">reacted to your recent post</span>
+                                        <span class="end-txt">My first tournament today!</span>
+                                        <div class="dot" id="red-dot1"></div>
+                                    </h1>
+                                </div>
+                                <p>1m ago</p>
                             </div>
-                            <p>1m ago</p>
                         </div>
                     </div>
-                </div>
-                <div class="message blue" id="msg-2">
-                    <div class="message-content">
-                        <img src="avatar-placeholder.png" alt="">
-                        <div class="message-txt">
-                            <div class="main-msg-txt">
-                                <h1>
-                                    <span class="name">Angela Gray</span>
-                                    <span class="light-txt">followed you</span>
-                                </h1>
+                </button>
+                <button class="remove-blue" onclick="removeBlueFunction2(), counter()">
+                    <div class="message blue" id="msg-2">
+                        <div class="message-content">
+                            <img src="avatar-placeholder.png" alt="">
+                            <div class="message-txt">
+                                <div class="main-msg-txt">
+                                    <h1>
+                                        <span class="name">Angela Gray</span>
+                                        <span class="light-txt">followed you</span>
+                                        <div class="dot" id="red-dot2"></div>
+                                    </h1>
+                                </div>
+                                <p>5m ago</p>
                             </div>
-                            <p>5m ago</p>
                         </div>
                     </div>
-                </div>
-                <div class="message blue" id="msg-3">
-                    <div class="message-content">
-                        <img src="avatar-placeholder.png" alt="">
-                        <div class="message-txt">
-                            <div class="main-msg-txt">
-                                <h1>
-                                    <span class="name">Jacob Thompson</span>
-                                    <span class="light-txt">has joined your group</span>
-                                    <span class="end-txt">Chess Club</span>
-                                </h1>
+                </button>
+                <button class="remove-blue" onclick="removeBlueFunction3(), counter()">
+                    <div class="message blue" id="msg-3">
+                        <div class="message-content">
+                            <img src="avatar-placeholder.png" alt="">
+                            <div class="message-txt">
+                                <div class="main-msg-txt">
+                                    <h1>
+                                        <span class="name">Jacob Thompson</span>
+                                        <span class="light-txt">has joined your group</span>
+                                        <span class="end-txt">Chess Club</span>
+                                        <div class="dot" id="red-dot3"></div>
+                                    </h1>
+                                </div>
+                                <p>1 day ago</p>
                             </div>
-                            <p>1 day ago</p>
                         </div>
                     </div>
-                </div>
+                </button>
                 <div class="message" id="msg-4">
                     <div class="message-content">
                         <img src="avatar-placeholder.png" alt="">
