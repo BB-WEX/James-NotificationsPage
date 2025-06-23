@@ -1,0 +1,138 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 700px;
+    height: 720px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.top-content {
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-left-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-left-content h1 {
+    font-size: 28px;
+    color: rgb(6, 6, 81);
+}
+
+.counter {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 6, 81);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgb(96, 96, 96);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.message {
+    width: 600px;
+    margin: 5px 0px 5px 0px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.main-msg-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-msg-txt h1{
+    font-size: 15px;
+    width: fit-content;
+    margin: 2px;
+}
+
+
+.message-txt p{
+    margin: 0px;
+    padding-left: 4px;
+    color: rgba(96, 96, 96, 0.742);
+    font-size: 14px;
+}
+
+
+h2 {
+    margin: 0px 30px 10px 62px;
+    border: 1px solid rgba(96, 96, 96, 0.742);
+    padding: 10px;
+    color: rgb(96, 96, 96);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.name {
+    color: rgb(6, 6, 81);
+}
+
+.light-txt {
+    color: rgb(96, 96, 96);
+}
+
+.end-txt {
+    color: rgba(15, 15, 77, 0.708);
+}
+
+.side-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 190px;
+}
+
+.blue {
+    background-color: rgba(133, 133, 199, 0.348);
+}
